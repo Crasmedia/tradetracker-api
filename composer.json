@@ -4,7 +4,7 @@
     "description": "Laravel implementation of the TradeTracker API",
     "require": {
         "php": ">=5.5.9",
-        "ext-soap": "^7.1",
-        "laravel/laravel": "^5.2"
+        "ext-soap": "*",
+        "illuminate/support": "^5.2"
     }
 }
