@@ -6,10 +6,5 @@
         "php": ">=5.5.9",
         "ext-soap": "^7.1",
         "laravel/laravel": "^5.2"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.0.1-dev"
-        }
     }
 }
