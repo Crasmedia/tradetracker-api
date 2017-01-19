@@ -6,5 +6,10 @@
         "php": ">=5.5.9",
         "ext-soap": "*",
         "illuminate/support": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crasmedia\\TradeTracker\\": "src"
+        }
     }
 }
