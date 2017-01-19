@@ -11,7 +11,7 @@ class TradeTrackerServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->publishes([__DIR__ . '/../config/tradetracker.php' => config_path('tradetracker.php')]);
+		$this->publishes([__DIR__ . '/config/tradetracker.php' => config_path('tradetracker.php')]);
 	}
 
 	/**
@@ -21,7 +21,7 @@ class TradeTrackerServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->mergeConfigFrom(__DIR__ . '/../config/tradetracker.php', 'tradetracker');
+		$this->mergeConfigFrom(__DIR__ . '/config/tradetracker.php', 'tradetracker');
 
 		$config = config('tradetracker');
 		$this->app->singleton(TradeTrackerApi::class, function() use ($config)
